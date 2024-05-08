@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div id="adis">adis</div>
+        <nav>
+            <ul>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#socials">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="about">
+        <img src="./images/programmer.png" alt="404 NO PIC FOUND" class="slika">
+    </div>
+
+    <div style="text-align: center; margin-top: 20px;">
+        <p>Hello,</p>
+        <p>My name is Adis Šipković.</p>
+        <p>I'm Third-year IT student,</p>
+        <p>Gaining interest in <span class="interests"></span></p>
+    </div>
+
+    <div id="skills">
+        <h3>My skills</h3>
+    </div>
+
+    <p id="paragraf2">These are the areas I'm most comfortable in</p>
+
+    <div style="display: flex; align-items: center; justify-content: center;
+    margin-top:30px; margin-bottom:3%;">
+        <i id="skil" class="fa fa-html5" style="color: white; font-size: 55px; margin-right: 15px;"></i>
+        <i id="skil" class="fa fa-css3" style="color: white; font-size: 55px; margin-right: 15px;"></i>
+        <img id="flutt" src="./images/angular_whiteTransparent.png" alt="Angular">
+        <img id="flutt" src="./images/flutter.207x256.png" alt="Flutter">
+        <img id="flutt" src="./images/dotnet.png" alt="DotNet">
+    </div>
+
+    <div id="projects">
+        <h3>My projects</h3>
+    </div>
+    <p id="paragraf2">
+        Most notable projects I've worked on so far
+    </p>
+
+    <div id="projekti">
+        <div id="projekat">
+            <img  src="./images/crowdfunding.png" alt="CROWDFUNDING">
+            <h3>GoDonate</h3>
+            <p>
+                GoDonate is a crowdfunding project which I've made together with the colleague of mine. It was implemented in .NET 6 with Angular as client-side
+            </p>
+            <a href="https://www.github.com/adis-01/GoDonate.repo" target="_blank"><i id="repositoryLink" class="fa fa-github"></i></a>
+        </div>
+        <div id="projekat">
+            <img  src="./images/car-dealer.png" alt="CAR">
+            <h3>eAutoSalon</h3>
+            <p>
+                eAutoSalon is another faculty project which focuses on car dealership business. It was implemented in .NET 6 with Flutter as client-side
+            </p>
+            <a href="https://www.github.com/adis-01/RS2_Seminarski_eAutoSalon" target="_blank"><i id="repositoryLink" class="fa fa-github"></i></a>
+        </div>
+        <div id="projekat">
+            <img  src="./images/humidity.png" alt="HUMIDITY">
+            <h3>IOT project</h3>
+            <p>
+                On this project I was first encountered with IOT and I've made a simple project which detects temperature and humidity and switches LED on/off
+            </p>
+            <a href="https://www.github.com/adis-01/TemperatureHumidityIOT" target="_blank"><i id="repositoryLink" class="fa fa-github"></i></a>
+        </div>
+    </div>
+
+    <div id="socials">
+        <a href="https://www.facebook.com/adis.sipkovic" target="_blank">
+            <i class="fa fa-facebook"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/adis-%C5%A1ipkovi%C4%87-85131727a/" target="_blank">
+            <i class="fa fa-linkedin-square"></i>
+        </a>
+        <a href="https://www.github.com/adis-01" target="_blank">
+            <i class="fa fa-github"></i>
+        </a>
+        <a href="mailto:adis.sipkovic@edu.fit.ba">
+            <i class="fa fa-envelope"></i>
+        </a>
+    </div>
+
+    <div class="center-button">
+        <button id="cv-download">Download CV</button>
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
