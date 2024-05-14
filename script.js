@@ -10,7 +10,7 @@ const button = document.getElementById("cv-download");
 
 
 function DownloadCV(){
-    var curriculum_vitae = './adis_cvitae.pdf';
+    var curriculum_vitae = './AdisSipkovicResume.pdf';
     var a_tag = document.createElement('a');
     a_tag.href=curriculum_vitae;
     a_tag.download ='adis_cv.pdf';
