@@ -6,103 +6,172 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
-
-    <header class="header">
-        <div id="adis">adis</div>
-        <nav>
-            <ul>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#skills">SKILLS</a></li>
-                <li><a href="#projects">PROJECTS</a></li>
-                <li><a href="#socials">CONTACT</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <div id="about">
-        <img src="./images/programmer.png" alt="404 NO PIC FOUND" class="slika">
-    </div>
-
-    <div style="text-align: center; margin-top: 20px;">
-        <p>Hello,</p>
-        <p>My name is Adis Šipković.</p>
-        <p>I'm Third-year IT student,</p>
-        <p>Gaining interest in <span class="interests"></span></p>
-    </div>
-
-    <div id="skills">
-        <h3>My skills</h3>
-    </div>
-
-    <p id="paragraf2">These are the areas I'm most comfortable in</p>
-
-    <div style="display: flex; align-items: center; justify-content: center;
-    margin-top:30px; margin-bottom:3%;">
-        <i id="skil" class="fa fa-html5" style="color: white; font-size: 55px; margin-right: 15px;"></i>
-        <i id="skil" class="fa fa-css3" style="color: white; font-size: 55px; margin-right: 15px;"></i>
-        <img id="flutt" src="./images/angular_whiteTransparent.png" alt="Angular">
-        <img id="flutt" src="./images/flutter.207x256.png" alt="Flutter">
-        <img id="flutt" src="./images/dotnet.png" alt="DotNet">
-    </div>
-
-    <div id="projects">
-        <h3>My projects</h3>
-    </div>
-    <p id="paragraf2">
-        Most notable projects I've worked on so far
-    </p>
-
-    <div id="projekti">
-        <div id="projekat">
-            <img  src="./images/crowdfunding.png" alt="CROWDFUNDING">
-            <h3>GoDonate</h3>
-            <p>
-                GoDonate is a crowdfunding project which I've made together with the colleague of mine. It was implemented in .NET 6 with Angular as client-side
-            </p>
-            <a href="https://www.github.com/adis-01/GoDonate.repo" target="_blank"><i id="repositoryLink" class="fa fa-github"></i></a>
-        </div>
-        <div id="projekat">
-            <img  src="./images/car-dealer.png" alt="CAR">
-            <h3>eAutoSalon</h3>
-            <p>
-                eAutoSalon is another faculty project which focuses on car dealership business. It was implemented in .NET 6 with Flutter as client-side
-            </p>
-            <a href="https://www.github.com/adis-01/RS2_Seminarski_eAutoSalon" target="_blank"><i id="repositoryLink" class="fa fa-github"></i></a>
-        </div>
-        <div id="projekat">
-            <img  src="./images/humidity.png" alt="HUMIDITY">
-            <h3>IOT project</h3>
-            <p>
-                On this project I was first encountered with IOT and I've made a simple project which detects temperature and humidity and switches LED on/off
-            </p>
-            <a href="https://www.github.com/adis-01/TemperatureHumidityIOT" target="_blank"><i id="repositoryLink" class="fa fa-github"></i></a>
-        </div>
-    </div>
-
-    <div id="socials">
-        <a href="https://www.facebook.com/adis.sipkovic" target="_blank">
-            <i class="fa fa-facebook"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/adis-%C5%A1ipkovi%C4%87-85131727a/" target="_blank">
-            <i class="fa fa-linkedin-square"></i>
-        </a>
+    <div class="header">
         <a href="https://www.github.com/adis-01" target="_blank">
-            <i class="fa fa-github"></i>
+            <h2>adis-01</h2>
         </a>
-        <a href="mailto:adis.sipkovic@edu.fit.ba">
-            <i class="fa fa-envelope"></i>
-        </a>
+        <div class="nav-sections">
+            <label id="about">About</label>
+            <label id="skills">Skills</label>
+            <label id="projects">Projects</label>
+            <label id="contact">Contact</label>
+        </div>
     </div>
 
-    <div class="center-button">
-        <button id="cv-download">Download CV</button>
+    <div class="about-columns">
+        <div class="text-column">
+            <p>Hello World,</p>
+            <p>I am <span class="name-highl"> Adis Šipković</span></p>
+            <p>Software developer passionate about creating innovative solutions</p>
+            <p>Specializing in <span class="developments"></span> development</p>
+        </div>
+        <div class="cv-column">
+            <button class="cvBtn">Download CV <i class="fa-solid fa-download"></i></button>
+        </div>
     </div>
 
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <div data-aos="fade-right" data-aos-duration="1000" class="skills">
+        <img src="./images/html5.png" alt="html.png" class="skillImage">
+        <img src="./images/css.png" alt="css.png" class="skillImage">
+        <img src="./images/js.png" alt="js.png" class="skillImage">
+        <img src="./images/angular.png" alt="angular.png" class="skillImage">
+        <img src="./images/electronjs.png" alt="electronjs.png" class="skillImage">
+        <img src="./images/csharp.png" alt="csharp.png" class="skillImage">
+        <img src="./images/flutter.png" alt="flutter.png" class="skillImage">
+    </div>
+
+
+    <div class="projects" data-aos="fade-right" data-aos-duration="1000">
+        <div class="project-box">
+
+            <div class="header-project">
+                <i class="fa-solid fa-chart-simple"></i>
+                <h4>TradingBot UI</h4>
+            </div>
+
+            <p class="description">
+                Developed a desktop trading bot UI, integrating file handling, API scraping, and robust functionalities
+                for seamless trading automation and management.
+            </p>
+
+            <div class="footer-project">
+                <h2 class="stack">electronjs</h2>
+                <a href="https://github.com/adis-01/TradingBot_UI" target="_blank"><i class="fa-brands fa-github"
+                        id="link"></i></a>
+            </div>
+        </div>
+        <div class="project-box">
+            <div class="header-project">
+                <i class="fa-solid fa-car"></i>
+                <h4>eAutoSalon</h4>
+            </div>
+
+            <p class="description">
+                Created a full-stack car dealership app for desktop and mobile, integrating payments, RabbitMQ, Docker,
+                and seamless functionality for users.
+            </p>
+
+            <div class="footer-project">
+                <h2 class="stack">flutter</h2>
+                <a href="https://github.com/adis-01/RS2_Seminarski_eAutoSalon" target="_blank"><i
+                        class="fa-brands fa-github" id="link"></i></a>
+            </div>
+        </div>
+        <div class="project-box">
+            <div class="header-project">
+                <i class="fa-solid fa-temperature-quarter"></i>
+                <h4>Temp Tracker</h4>
+            </div>
+
+            <p class="description">
+                Developed an IoT project using Arduino to monitor temperature and humidity, controlling LEDs, with
+                Firebase for variable storage and management.
+            </p>
+
+            <div class="footer-project">
+                <h2 class="stack">html/css/js</h2>
+                <a href="https://github.com/adis-01/TemperatureHumidityIOT" target="_blank"><i
+                        class="fa-brands fa-github" id="link"></i></a>
+            </div>
+        </div>
+        <div class="project-box">
+            <div class="header-project">
+                <i class="fa-solid fa-hand-holding-dollar"></i>
+                <h4>GoDonate</h4>
+            </div>
+
+            <p class="description">
+                Built a crowdfunding platform for donations and scholarships, collaborating with a colleague,
+                emphasizing teamwork, and delivering impactful user-centered functionality.
+            </p>
+
+            <div class="footer-project">
+                <h2 class="stack">angular</h2>
+                <a href="https://github.com/adis-01/GoDonate.repo" target="_blank"><i class="fa-brands fa-github"
+                        id="link"></i></a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="contact-paragraph">
+        <i class="fa-solid fa-envelope"></i>
+        <p class="paragraph">Feel free to contact me - fill in the form below and send an email</p>
+    </div>
+
+    <div class="center" data-aos="fade-left" data-aos-duration="1000">
+        <div class="form-div">
+            <div class="name-email">
+                <input type="text" placeholder="Your name here" class="nameSurname" id="formInput">
+                <input type="text" class="email" id="formInput" placeholder="Your email address here">
+            </div>
+            <textarea rows="8" cols="10" name="content" id="inputContent" placeholder="Mail content here"></textarea>
+        </div>
+    </div>
+    <div class="button-div">
+        <button class="sendBtn">Send email</button>
+    </div>
+
+
+    <div class="contact" data-aos="fade-right" data-aos-duration="1000">
+        <div class="socials">
+            <div class="social">
+                <a href="https://www.github.com/adis-01" target="_blank"><i class="fa fa-github"></i></a>
+            </div>
+            <div class="social">
+                <a href="https://www.facebook.com/adis.sipkovic" target="_blank"><i class="fa fa-facebook"></i></a>
+            </div>
+            <div class="social">
+                <a href="https://www.linkedin.com/in/adis-%C5%A1ipkovi%C4%87-85131727a/" target="_blank"><i
+                        class="fa fa-linkedin-square"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-class">
+        <h2>Made by: <span>Šipković Adis</span></h2>
+        <h4>You can view the GitHub repository of this portfolio <a href="https://github.com/adis-01/adis-01.github.io"
+                target="_blank" id="portfolioLink">here</a></h4>
+    </div>
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://kit.fontawesome.com/f89324103b.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "8gMvldKO2E2CWND3Z",
+            });
+        })();
+    </script>
     <script src="./script.js"></script>
 </body>
 
